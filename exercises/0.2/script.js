@@ -8,12 +8,22 @@ function setup() {
     10,
     20
   )
+  let button = createButton("See the code solution")
+  button.position(20, 40)
+  button.mousePressed(showCode)
   text(
     "If the ace is reshuffled back into the deck: (4/52) x (4/52) ≈ 0.0056",
     width / 2 - 200,
     height / 2
   )
   text("If not: (4/52) x (3/51) ≈ 0.0045", width / 2 - 200, height / 2 + 40)
+}
+
+function showCode() {
+  window.open(
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0.2/script.js",
+    "_blank"
+  )
 }
 
 function draw() {}

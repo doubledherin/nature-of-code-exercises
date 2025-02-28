@@ -9,7 +9,17 @@ function setup() {
     20
   )
   text("Implement this variation of the Walker class.", 10, 40)
+  let button = createButton("See the code solution")
+  button.position(20, 60)
+  button.mousePressed(showCode)
   walker = new Walker(width, height)
+}
+
+function showCode() {
+  window.open(
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0.5/script.js",
+    "_blank"
+  )
 }
 
 function draw() {

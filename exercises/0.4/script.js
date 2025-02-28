@@ -1,6 +1,3 @@
-let blue = "#56B7B0"
-let red = "#CC3261"
-let yellow = "#F1BC47"
 let standardDeviationSlider
 
 function setup() {
@@ -27,16 +24,27 @@ function setup() {
     80
   )
   text("Try creating a slider to adjust the standard deviation.", 10, 100)
+  let button = createButton("See the code solution")
+  button.position(20, 120)
+  button.mousePressed(showCode)
+
   standardDeviationSlider = createSlider(2, 60, 20, 2)
   standardDeviationSlider.position(width - 200, 20)
   standardDeviationSlider.size(100)
+}
+
+function showCode() {
+  window.open(
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0.4/script.js",
+    "_blank"
+  )
 }
 
 function draw() {
   const sd = standardDeviationSlider.value()
   push()
   noStroke()
-  // fill(0)
+  fill(0)
   text(`Standard deviation: ${sd}`, width - 200, 60)
   pop()
   let x = randomGaussian(width / 2, 100)

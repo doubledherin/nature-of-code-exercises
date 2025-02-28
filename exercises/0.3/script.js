@@ -9,6 +9,16 @@ function setup() {
     20
   )
   walker = new Walker(width, height)
+  let button = createButton("See the code solution")
+  button.position(20, 40)
+  button.mousePressed(showCode)
+}
+
+function showCode() {
+  window.open(
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0.3/script.js",
+    "_blank"
+  )
 }
 
 function draw() {
