@@ -17,7 +17,7 @@ function setup() {
 
 function showCode() {
   window.open(
-    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0.5/script.js",
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/0-Randomness/0.5/script.js",
     "_blank"
   )
 }
