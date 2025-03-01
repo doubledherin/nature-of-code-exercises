@@ -1,5 +1,3 @@
-let walker
-
 function setup() {
   createCanvas(windowWidth, windowHeight)
   textSize(16)
