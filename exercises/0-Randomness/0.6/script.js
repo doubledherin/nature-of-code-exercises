@@ -3,23 +3,19 @@ let walker
 function setup() {
   createCanvas(windowWidth, windowHeight)
   textSize(16)
-  text(
-    "Exercise 0.6: Use a custom probability distribution to vary the size of the random walker’s steps.",
-    10,
-    20
+  const p = createP(
+    "Exercise 0.6: Use a custom probability distribution to vary the size of the random walker’s steps.</br>The step size can be determined by influencing the range of values picked with a qualifying random value.</br>Can you map the probability to a quadratic function by making the likelihood that a value is picked equal to the value squared?"
   )
-  text(
-    "The step size can be determined by influencing the range of values picked with a qualifying random value.",
-    10,
-    40
-  )
-  text(
-    "Can you map the probability to a quadratic function by making the likelihood that a value is picked equal to the value squared?",
-    10,
-    60
-  )
+  p.position(10, 0)
+  p.style("background-color", "white")
+  p.style("border-radius", "4px")
+  p.style("padding", "5px")
   let button = createButton("See the code solution")
-  button.position(20, 80)
+  button.position(10, 80)
+  button.style("background-color", "white")
+  button.style("border-radius", "4px")
+  button.style("padding", "5px")
+  button.style("border", "black 1px solid")
   button.mousePressed(showCode)
   walker = new Walker(width, height)
 }

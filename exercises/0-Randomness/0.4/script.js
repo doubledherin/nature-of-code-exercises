@@ -2,30 +2,20 @@ let standardDeviationSlider
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  textSize(16)
-  text(
-    "Exercise 0.4: Consider a simulation of paint splatter drawn as a collection of colored dots.",
-    10,
-    20
+  const p = createP(
+    "Exercise 0.4: Consider a simulation of paint splatter drawn as a collection of colored dots.</br>Most of the paint clusters around a central position, but some dots splatter out toward the edges.</br>Can you use a normal distribution of random numbers to generate the positions of the dots?</br>Can you also use a normal distribution of random numbers to generate a color palette?</br>Try creating a slider to adjust the standard deviation."
   )
-  text(
-    "Most of the paint clusters around a central position, but some dots splatter out toward the edges.",
-    10,
-    40
-  )
-  text(
-    "Can you use a normal distribution of random numbers to generate the positions of the dots?",
-    10,
-    60
-  )
-  text(
-    "Can you also use a normal distribution of random numbers to generate a color palette?",
-    10,
-    80
-  )
-  text("Try creating a slider to adjust the standard deviation.", 10, 100)
+  p.position(10, 0)
+  p.style("background-color", "white")
+  p.style("border-radius", "4px")
+  p.style("padding", "5px")
+  p.style("border", "black 1px solid")
   let button = createButton("See the code solution")
-  button.position(20, 120)
+  button.position(10, 125)
+  button.style("background-color", "white")
+  button.style("border-radius", "4px")
+  button.style("padding", "5px")
+  button.style("border", "black 1px solid")
   button.mousePressed(showCode)
 
   standardDeviationSlider = createSlider(2, 60, 20, 2)
