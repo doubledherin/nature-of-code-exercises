@@ -10,6 +10,8 @@ function setup() {
   p.style("background-color", "white")
   p.style("border-radius", "4px")
   p.style("padding", "5px")
+  p.style("border", "black 1px solid")
+
   let button = createButton("See the code solution")
   button.position(10, 60)
   button.style("background-color", "white")
@@ -17,6 +19,7 @@ function setup() {
   button.style("padding", "5px")
   button.style("border", "black 1px solid")
   button.mousePressed(showCode)
+
   boxSize = width / 4
   walker = new Walker(width, height, boxSize)
   box()

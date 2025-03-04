@@ -4,7 +4,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight)
   textSize(16)
   const p = createP(
-    "Exercise 1.1: Take one of the walker examples from Chapter 0 and convert it to use vectors."
+    "Exercise 1.6: Referring back to Example 0.7, implement an acceleration calculated with Perlin noise."
   )
   p.position(10, 0)
   p.style("background-color", "white")
@@ -13,7 +13,7 @@ function setup() {
   p.style("border", "black 1px solid")
 
   let button = createButton("See the code solution")
-  button.position(10, 50)
+  button.position(10, 60)
 
   button.style("background-color", "white")
   button.style("border-radius", "4px")
@@ -25,12 +25,13 @@ function setup() {
 
 function showCode() {
   window.open(
-    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/1-Vectors/1.1/script.js",
+    "https://github.com/doubledherin/nature-of-code-exercises/blob/main/exercises/1-Vectors/1.6/script.js",
     "_blank"
   )
 }
 
 function draw() {
-  walker.step()
+  walker.update()
+  walker.checkEdges()
   walker.show()
 }
