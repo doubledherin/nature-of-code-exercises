@@ -3,7 +3,7 @@ class Walker {
     this.position = createVector(width / 2, height / 2)
     this.velocity = createVector()
     this.topSpeed = 5
-    this.radius = 48
+    this.diameter = 48
   }
 
   update() {
