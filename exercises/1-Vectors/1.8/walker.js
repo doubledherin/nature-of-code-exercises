@@ -36,6 +36,6 @@ class Walker {
     stroke(0)
     strokeWeight(2)
     fill(127)
-    circle(this.position.x, this.position.y, 48)
+    circle(this.position.x, this.position.y, this.diameter)
   }
 }
