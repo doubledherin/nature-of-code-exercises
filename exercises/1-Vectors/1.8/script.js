@@ -2,7 +2,6 @@ let walker
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  textSize(16)
   const p = createP(
     "Exercise 1.8: Example 1.10 is remarkably close to the concept of gravitational attraction, with the object being attracted to the mouse position.</br>In the example, however, the attraction magnitude is constant, whereas with a real-life gravitational force, the magnitude is inversely proportional to distance:</br>the closer the object is to the attraction point, the faster it accelerates. I’ll cover gravitational attraction in more detail in the next chapter, but for now,</br>try implementing your own version of Example 1.10 with a variable magnitude of acceleration, stronger when it’s either closer or farther away."
   )
