@@ -30,12 +30,13 @@ class Walker {
     this.velocity.add(this.acceleration)
     this.velocity.limit(this.topspeed)
     this.position.add(this.velocity)
+    this.acceleration.mult(0)
   }
 
   show() {
     stroke(0)
     strokeWeight(2)
     fill(127)
-    circle(this.position.x, this.position.y, 48)
+    circle(this.position.x, this.position.y, this.diameter)
   }
 }
