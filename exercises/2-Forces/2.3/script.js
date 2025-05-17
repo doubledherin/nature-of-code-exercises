@@ -13,7 +13,7 @@ function setup() {
   p.style("border", "black 1px solid")
 
   let button = createButton("See the code solution")
-  button.position(10, 70)
+  button.position(10, 90)
 
   button.style("background-color", "white")
   button.style("border-radius", "4px")
